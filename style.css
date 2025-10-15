@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 body {
     width: 100vw;
     height: 100vh;
     background-color: rgb(47, 47, 47);
     display: grid;
     grid-template: "photos subtitle" "description videos";
+    font-family: "Julius Sans One", sans-serif;
 }
 
 .title {
@@ -11,6 +14,25 @@ body {
     grid-row-start: photos;
     grid-column-end: videos;
     grid-row-end: videos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > * {
+        z-index: 1;
+    }
+
+    h1 {
+        color: rgb(255,255,255);
+        text-shadow: rgb(150, 150, 150) 1px 1px 10px;
+        font-size: 7rem;
+    }
+
+    h2 {
+        color: rgb(255,255,255);
+        text-shadow: rgb(150, 150, 150) 1px 1px 10px
+    }
 }
 
 .photo {
